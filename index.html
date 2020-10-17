@@ -1,0 +1,53 @@
+<html>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<head>
+<script type=”text/javascript”>
+
+ga(function() { 
+      var tracker = ga.getAll()[0];
+      var trackingId = tracker.get('trackingId');//GATRACKID
+    });
+	
+document.getElementById('FORM_ID').addEventListener(
+    'submit', function(event) {
+      ga(function() { 
+        var tracker = ga.getAll()[0];
+        var clientId = tracker.get('clientId');
+        document.getElementById('00N2v00000YpImP').value = clientId;//GACLIENTID
+        var userId = tracker.get('userId'); 
+        document.getElementById('00N2v00000YpImU').value = userId; //GAUSERID
+      });
+    });
+ 
+    
+</script>
+</head>
+<body>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" id="FORM_ID" method="POST">
+
+<input type=hidden name="oid" value="00D2v000001gq3K">
+<input type=hidden name="retURL" value="https://google.com">
+
+<input  id="first_name" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text"  /><br>
+
+<input  id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<input  id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<input  id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<input  id="city" placeholder="City" maxlength="40" name="city" size="20" type="text" /><br>
+
+<input  id="state" placeholder="State/Province" maxlength="20" name="state" size="20" type="text" /><br>
+
+<input  id="00N2v00000YpImP" placeholder="GACLIENTID" type=hidden maxlength="255" name="00N2v00000YpImP" size="20" type="text" value="" /><br>
+
+<input  id="00N2v00000YpImU" placeholder="GAUSERID" type=hidden maxlength="255" name="00N2v00000YpImU" size="20" type="text" value="" /><br>
+
+<input  id="00N2v00000YpImZ" placeholder="GATRACKID" type=hidden maxlength="255" name="00N2v00000YpImZ" size="20" type="text" value="trackingID" /><br>
+
+<input type="submit" name="submit">
+
+</form>
+</body>
+</html>
