@@ -2,34 +2,17 @@
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148148215-1"></script>
-<script type="text/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180758514-1"></script>
+<script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-148148215-1');
-  gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
-  ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
-	
-ga(function() { 
-      var tracker = ga.getAll()[0];
-      var trackingId = tracker.get('UA-148148215-1');//GATRACKID
-    });
-	
-document.getElementById('FORM_ID').addEventListener(
-    'submit', function(event) {
-      ga(function() { 
-        var tracker = ga.getAll()[0];
-        var clientId = tracker.get('clientId');
-        document.getElementById('00N2v00000YpImP').value = clientId;//GACLIENTID
-        var userId = tracker.get('userId'); 
-        document.getElementById('00N2v00000YpImU').value = userId; //GAUSERID
-      });
-    });
- 
-    
+  gtag('config', 'UA-180758514-1');
+	gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
+	ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
 </script>
+
 </head>
 <body>
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" id="FORM_ID" method="POST">
@@ -49,11 +32,11 @@ document.getElementById('FORM_ID').addEventListener(
 
 <input  id="state" placeholder="State/Province" maxlength="20" name="state" size="20" type="text" /><br>
 
-<input  id="00N2v00000YpImP" placeholder="GACLIENTID" type=hidden maxlength="255" name="00N2v00000YpImP" size="255" type="text" value="" /><br>
+<input  id="GACLIENTID" placeholder="GACLIENTID" type=hidden maxlength="255" name="GACLIENTID" size="255" type="text" value="" /><br>
 
-<input  id="00N2v00000YpImU" placeholder="GAUSERID" type=hidden maxlength="255" name="00N2v00000YpImU" size="255" type="text" value="" /><br>
+<input  id="GAUSERID" placeholder="GAUSERID" type=hidden maxlength="255" name="GAUSERID" size="255" type="text" value="" /><br>
 
-<input  id="00N2v00000YpImZ" placeholder="GATRACKID" type=hidden maxlength="255" name="00N2v00000YpImZ" size="255" type="text" value="trackingID" /><br>
+<input  id="GATRACKID" placeholder="GATRACKID" type=hidden maxlength="255" name="GATRACKID" size="255" type="text" value="trackingID" /><br>
 
 <input type="submit" name="submit">
 
